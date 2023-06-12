@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <h1>testing creating li</h1>
+    <ul id="items">
+
+    </ul>
+
+    <script>
+        const array = ['sss','ssswwww','gfege'];
+        const ul = document.getElementById('items');
+        for(let i = 0; i < array.length ; i++){
+            const names = array[i];
+            const li = document.createElement('li');
+            li.innerText = names;
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+</html>
